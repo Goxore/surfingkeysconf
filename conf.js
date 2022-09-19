@@ -27,6 +27,11 @@ if(window.location.hostname.includes("youtu")){
         var btn = document.querySelector("button.ytp-ad-overlay-close-button") || document.querySelector("button.ytp-ad-skip-button") || document.querySelector('ytd-watch-flexy button.ytp-play-button');
         btn.click();
     }, {domain: /youtube.com/i});
+    
+    api.mapkey("b", "back on youtube", function() {
+        var logo = document.querySelector("a#logo");
+        logo.click();
+    }, {domain: /youtube.com/i});
 }
 
 
